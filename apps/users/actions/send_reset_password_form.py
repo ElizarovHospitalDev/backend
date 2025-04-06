@@ -21,7 +21,6 @@ class SendResetPasswordForm(AbstractAction):
         self.reset_form.is_valid()
 
     def action(self):
-        'Создания пароля' if self.is_user_create else 'Восстановления пароля'
         body_email: str = 'create_user_email.html' if self.is_user_create else 'password_reset_email.html'
 
         opts = {
