@@ -1,0 +1,12 @@
+DEFAULT_DATABASE_URL=postgres://postgres:postgres@postgres:5432/postgres
+SECRET_KEY='so_secret'
+DEBUG=True
+
+EMAIL_HOST=smtp.mail.ru
+EMAIL_PORT=465
+EMAIL_HOST_USER=email
+EMAIL_HOST_PASSWORD=password
+EMAIL_USE_SSL=False
+DEFAULT_FROM_EMAIL=testmail.ru
+
+FRONTEND_HOST=http://127.0.0.1:5000

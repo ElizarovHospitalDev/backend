@@ -1,0 +1,9 @@
+{% autoescape off %}
+Добрый день.
+Для создания пароля учетной записи {{ user.username }},
+пожалуйста, перейдите по ссылке и введите новый пароль:
+{% block reset_link %}
+{{ protocol }}://{{ domain }}/{{ url }}/{{ uid }}/{{ token }}
+{% endblock %}
+
+{% endautoescape %}
