@@ -39,6 +39,6 @@ jobs:
         run: |
           ssh -o StrictHostKeyChecking=no ${{ secrets.SERVER_USERNAME }}@${{ secrets.SERVER_HOST }} << 'EOF'
             export CI_COMMIT_SHORT_SHA=${{ github.sha }}
-            
+
             bash /opt/backend/deploy.sh
           EOF

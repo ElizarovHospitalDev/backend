@@ -6,6 +6,8 @@ services:
       - /opt/backend/.environment:/code/.environment
     env_file:
       - .environment
+    ports:
+      - "8000:8000"
     restart: always
 
   postgres:
