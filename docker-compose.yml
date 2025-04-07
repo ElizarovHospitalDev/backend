@@ -1,0 +1,19 @@
+version: "3.9"
+services:
+  django:
+    image: ghcr.io/ElizarovHospitalDev/backend:$CI_COMMIT_SHORT_SHA
+    volumes:
+      - /opt/backend/.environment:/code/.environment
+    env_file:
+      - .environment
+    restart: always
+
+  postgres:
+    image: postgres
+    container_name: elizarov-backend-postgres
+    ports:
+      - 5432:5432
+    volumes:
+      - ./storage/postgres:/var/lib/postgresql/data
+    env_file:
+      - .environment
