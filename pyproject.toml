@@ -12,6 +12,8 @@ dependencies = [
     'pre-commit',
     'psycopg2-binary',
     'django-environ',
+    'gunicorn',
+    'uvicorn',
 ]
 
 [tool.setuptools]

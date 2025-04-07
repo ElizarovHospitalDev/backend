@@ -31,7 +31,7 @@ remove: set-container
 	docker compose -f docker-compose.dev.yml rm -fs $(c)
 
 compile-reqs: set-container
-	docker compose -f docker-compose.dev.yml run --rm $(c) bash -c 'pip install pip-tools && uv pip compile pyproject.toml -o requirements.txt'
+	docker compose -f docker-compose.dev.yml run --rm --no-deps $(c) bash -c 'pip install pip-tools && uv pip compile pyproject.toml -o requirements.txt'
 install-reqs: set-container
 	docker compose -f docker-compose.dev.yml run --rm $(c) bash -c 'pip install uv && uv pip install --system --no-cache-dir -r requirements.txt'
 
