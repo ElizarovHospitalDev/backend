@@ -4,7 +4,7 @@ DIRECTORY=/opt/backend/;
 
 cd $DIRECTORY;
 
-docker pull ghcr.io/ElizarovHospitalDev/backend:$CI_COMMIT_SHORT_SHA;
+docker pull ghcr.io/elizarovhospitaldev/backend:$CI_COMMIT_SHORT_SHA;
 
 if [[ $? = 0 ]]
     then

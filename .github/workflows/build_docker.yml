@@ -6,9 +6,9 @@ on:
       - main
 
 env:
-  CONTAINER_RELEASE_IMAGE: ghcr.io/ElizarovHospitalDev/backend:${{ github.sha }}
-  CONTAINER_MAIN_IMAGE: ghcr.io/ElizarovHospitalDev/backend:${{ github.ref_name }}
-  CONTAINER_OLD_MAIN_IMAGE: ghcr.io/ElizarovHospitalDev/backend:main-old
+  CONTAINER_RELEASE_IMAGE: ghcr.io/elizarovhospitaldev/backend:${{ github.sha }}
+  CONTAINER_MAIN_IMAGE: ghcr.io/elizarovhospitaldev/backend:${{ github.ref_name }}
+  CONTAINER_OLD_MAIN_IMAGE: ghcr.io/elizarovhospitaldev/backend:main-old
 
 jobs:
   build-docker:
