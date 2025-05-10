@@ -1,4 +1,7 @@
+from .analysis_data import AnalysisDataViewSet
 from .arthroplasty_form import ArthroplastyFormViewSet
+from .comobrid_pathologies import ComorbidPathologyViewSet
+from .microflora import MicrofloraViewSet
 from .operation_stage import OperationStageViewSet
 from .patient import PatientViewSet
 from .surgical_intervention import SurgicalInterventionViewSet

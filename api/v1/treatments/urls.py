@@ -5,6 +5,9 @@ from api.v1.treatments import views
 
 router = SimpleRouter()
 
+router.register('microfloras', views.MicrofloraViewSet)
+router.register('analysis-datas', views.AnalysisDataViewSet)
+router.register('comobrid-pathologies', views.ComorbidPathologyViewSet)
 router.register('outcome', views.TreatmentOutcomeViewSet)
 router.register('surgical-interventions', views.SurgicalInterventionViewSet)
 router.register('patients', views.PatientViewSet)
