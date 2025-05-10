@@ -1,0 +1,6 @@
+from .arthroplasty_form import ArthroplastyFormViewSet
+from .operation_stage import OperationStageViewSet
+from .patient import PatientViewSet
+from .surgical_intervention import SurgicalInterventionViewSet
+from .treatment import TreatmentViewSet
+from .treatment_outcome import TreatmentOutcomeViewSet

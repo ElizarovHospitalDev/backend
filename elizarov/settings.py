@@ -50,7 +50,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'apps.users.apps.UsersConfig',
+    'apps.endoprosthetics.apps.EndoprostheticsConfig',
     'apps.admins.apps.AdminsAppConfig',
+    'apps.treatments.apps.TreatmentsConfig',
     'drf_spectacular',
     'rest_framework',
 ]

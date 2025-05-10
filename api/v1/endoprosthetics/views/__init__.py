@@ -1,0 +1,4 @@
+from .endoprosthetics import EndoprostheticViewSet
+from .endoprosthetics_form import EndoprostheticFormViewSet
+from .endoprosthetics_type import EndoprostheticTypeViewSet
+from .endoprosthetics_vendor import EndoprostheticVendorViewSet
