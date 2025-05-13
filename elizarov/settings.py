@@ -39,6 +39,9 @@ ALLOWED_HOSTS = [
 
 FRONTEND_HOST = env.str('FRONTEND_HOST', 'http://127.0.0.1:5000')
 
+CORS_ORIGIN_WHITELIST = [
+    FRONTEND_HOST,
+]
 
 # Application definition
 
@@ -49,6 +52,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'corsheaders',
     'apps.users.apps.UsersConfig',
     'apps.endoprosthetics.apps.EndoprostheticsConfig',
     'apps.admins.apps.AdminsAppConfig',
@@ -66,6 +70,7 @@ AUTH_USER_MODEL = 'users.User'
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',

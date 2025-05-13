@@ -28,5 +28,3 @@ urlpatterns = [
     path('docs/', SpectacularSwaggerView.as_view(url_name='schema'), name='docs'),
     path('v1/', include('api.v1.urls')),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
-
-# SendResetPasswordForm(email='hogangosha@yandex.ru', is_user_create=True).execute()
